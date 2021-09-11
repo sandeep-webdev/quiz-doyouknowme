@@ -16,7 +16,6 @@ function play(question,answer,secondAnswer){
   }
   else{
     console.log("oops! you're wrong! points not gained!");
-    // console.log("the correct answer/answers were:\n",answer," ",secondAnswer);
     if(secondAnswer===null)console.log("the correct answer is:\n"+answer);
     else console.log("the correct answers are:\n"+answer+" and "+secondAnswer);
   }
@@ -42,9 +41,6 @@ var game=[{
 }
 ];
 
-// play(game[0].question,game[0].answer);
-// play(game[1].question,game[1].answer);
-// play(game[2].question,game[2].answer);
 for(var i=0; i<game.length; i++){
   var currentQestion=game[i];
   play(currentQestion.question,currentQestion.answer,currentQestion.secondAnswer);
